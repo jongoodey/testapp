@@ -13,8 +13,8 @@
   </div>
 
   <div data-role="content">
-	<button onclick="getLocation()">Try It</button>
 	<p id="demo">Click the button to get your position:</p>
+	<button onclick="getLocation()">Try It</button>
   </div>
 
   <div data-role="footer">
@@ -23,7 +23,6 @@
 </div> 
 
 <script>
-$(document).on("pageinit", function(){
 
 	var x=document.getElementById("demo");
 	function getLocation()
@@ -62,7 +61,7 @@ $(document).on("pageinit", function(){
 	      break;
 	    }
 	  }
-});
+
 </script>
 </body>
 </html>
