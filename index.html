@@ -8,7 +8,10 @@
 $(document).on("pageinit","#pageone",function(){
   $("p").on("swipe",function(){
     $("span").text("Swipe detected!");
-  });                       
+  });
+  $(".bbci").click(function(){
+    $("#div1").load("http://feeds.bbci.co.uk/sport/0/football/rss.xml");
+  });                      
 });
 
 </script>
@@ -28,6 +31,10 @@ $(document).on("pageinit","#pageone",function(){
 	<p>Swipe this text or the box below.</p>
     <p style="border:1px solid black;height:200px;width:200px;"></p>
     <p><span style="color:red"></span></p>
+
+    <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+	<button class="bbci">Get External Content</button>
+    
   </div>
 
   <div data-role="footer">
